@@ -102,12 +102,12 @@ use crate::QuicResultExt;
 
 mod addr_validation_token;
 pub(crate) mod connection;
-pub use self::connection::ApplicationOverQuic;
 mod hooks;
 mod io;
 pub mod raw;
 mod router;
 
+use self::connection::ApplicationOverQuic;
 use self::connection::ConnectionIdGenerator;
 use self::connection::QuicConnection;
 use self::router::acceptor::ConnectionAcceptor;
